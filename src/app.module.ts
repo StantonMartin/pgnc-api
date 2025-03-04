@@ -38,6 +38,7 @@ import { GeneNoteModule } from './gene-note/gene-note.module';
 import { GeneXrefModule } from './gene-xref/gene-xref.module';
 import { GeneReplacementModule } from './gene-replacement/gene-replacement.module';
 import { GeneLocationModule } from './gene-location/gene-location.module';
+import { HealthModule } from './health/health.module';
 
 /**
  * The main application module for the PGNC API.
@@ -82,6 +83,7 @@ import { GeneLocationModule } from './gene-location/gene-location.module';
         LocusGroupModule,
         LocusTypeModule,
         GeneModule,
+        HealthModule,
         SymbolModule,
         NameModule,
         GeneHistoryModule,
@@ -111,5 +113,6 @@ import { GeneLocationModule } from './gene-location/gene-location.module';
         MasterRoleGuard,
         CuratorRoleGuard,
     ],
+    controllers: [],
 })
 export class AppModule {}
