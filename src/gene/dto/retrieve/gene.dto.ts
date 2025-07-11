@@ -1,13 +1,5 @@
-import { geneStatus } from '../../enum/gene-status.enum';
-import { NameDto } from './gene/name.dto';
-import { LocusTypeDto } from './gene/locus-type.dto';
-import { NoteDto } from './gene/note.dto';
-import { ReplacementDto } from './gene/replacement.dto';
-import { ReplacedDto } from './gene/replaced.dto';
-import { Exclude, Expose, Type } from 'class-transformer';
-import { SpeciesDto } from './gene/species.dto';
-import { SymbolDto } from './gene/symbol.dto';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
+import { Exclude, Expose, Type } from 'class-transformer';
 import {
     IsArray,
     IsDate,
@@ -19,8 +11,16 @@ import {
     ValidateNested,
 } from 'class-validator';
 import { nomenclatureType } from 'src/common/enum/nomenclature-type.enum';
-import { XrefDto } from './gene/xref.dto';
+import { geneStatus } from '../../enum/gene-status.enum';
 import { LocationDto } from './gene/location.dto';
+import { LocusTypeDto } from './gene/locus-type.dto';
+import { NameDto } from './gene/name.dto';
+import { NoteDto } from './gene/note.dto';
+import { ReplacedDto } from './gene/replaced.dto';
+import { ReplacementDto } from './gene/replacement.dto';
+import { SpeciesDto } from './gene/species.dto';
+import { SymbolDto } from './gene/symbol.dto';
+import { XrefDto } from './gene/xref.dto';
 
 @Exclude()
 export class GeneDto {
@@ -346,7 +346,7 @@ export class GeneDto {
 
     @ApiProperty({
         description: 'The primary gene ID source',
-        example: 'Phytozome',
+        example: 'Phytozome v4_1',
     })
     @IsString()
     @IsNotEmpty()
