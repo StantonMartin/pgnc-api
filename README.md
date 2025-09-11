@@ -12,7 +12,7 @@ The PGNC REST API provides programmatic access to the PGNC (Plant Gene Nomenclat
 ### Key Features
 
 - **Gene Data Access**: Comprehensive access to gene symbols, names, locations, and cross-references
-- **Search Integration**: Direct integration with Apache Solr 8.x for fast full-text search
+- **Search Integration**: Direct integration with Apache Solr 9.9.0 for fast full-text search
 - **Authentication**: JWT-based authentication with configurable token lifetimes
 - **Database Integration**: TypeORM integration with PostgreSQL 17.0
 - **API Documentation**: Automated OpenAPI/Swagger documentation
@@ -226,7 +226,7 @@ The API integrates seamlessly with the Angular 19.1+ frontend:
 
 ### Search Integration
 
-Direct integration with Apache Solr 8.x:
+Direct integration with Apache Solr 9.9.0:
 
 - **Solr Client**: Custom service for Solr communication
 - **Index Synchronization**: Automated via Python 3.13+ data pipeline
